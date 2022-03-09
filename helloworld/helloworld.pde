@@ -1,57 +1,42 @@
 //Gobal Variables 
-  char z;
-  char y;
-  String d;
-  String e;
-  String f;
-  String g;
-  String ten;
-  String h;
-  String one;
-  int two;
-  int skipCount=2;
-  //
+char z, y;
+String d,e,f, g, ten, h, one;
+int two,skipCount=2,twenty ;
+float decimal=1.0,thirty; //must include a zero decimal or compiler reads as INTEGER
+//
 void setup() {
   String secondSentence="Mr Mercer counts to 10, by 1.";// Local virables 
   //println(secondSentence);
-  //Populations, Declaration, Valuing
-    z = '.';
-   y=',';
-   d="Mr";
-   e="Mercer";
+  //Populations, Declaration, Valuing000
+  z = '.';
+  y=',';
+  d="Mr";
+  e="Mercer";
   f="counts";
-   g="to";
-   ten ="10000";
-   h="by";
-   one="1";
-   two ='1';
+  g="to";
+  ten ="10000";
+  twenty=10000;
+  thirty=100000000000.0;//12  0 count
+  h ="by";
+  one="1";
+  two ='1';
 
-  println("\t\t", d+z, e, f, g, ten+y, h, str(two)+z);// casting, making a INTGER into a string
-  println("one plus two is", int(one) + two);//casting is int(one), to change STRING to INTGER
+ // println("\t\t", d+z, e, f, g, ten+y, h, str(two)+z);// casting, making a INTGER into a string
+ // println("one plus two is", int(one) + two);//casting is int(one), to change STRING to INTGER
 }//end setup
 
 //
-void draw() {  println("\t\t", d+z, e, f, g, ten+y, h, str(two)+z);
-two+=1;//two+1 two++ two+=1
-}//end draw
+void draw() { 
+  two*=skipCount;//+=,-=,/=
+  println( d+z, e, f, g, ten+y, h, str(two)+z);
+ twenty /= skipCount;// formula to count backwards to form 10000//ten-1,ten--,ten-=1
+  println( d+z, e, f, g, one+y,"backwards from", str(twenty)+z);
+  thirty/=skipCount;//
+   println( d+z, e, f, g, one+y,"backwards from", str(thirty)+z);
+}
 //
 void keyPressed() {
 }//End keyPressed 
 //
 void mousePressed() {
 }//End mousePressed
-//
-// what we will copy and paste from the Satic Pogram 
-/*
-
- 
- 
- // Concatenation 
- 
-//
-
- 
- //*Note: the computer is adding ASCII Values
- //period has an ASCII Value of 46
- //So, int(one)+two+z = 1 + 1 + 46
-*/
