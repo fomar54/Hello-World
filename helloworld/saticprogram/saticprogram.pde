@@ -8,4 +8,4 @@ background(19);
 //bakground as color, RGB,random(a,b)
 background(color(random(255),random(255),random(255) ));
 
-rect(x, y, rectWidth ,rectHeight);
+rect( x , y, rectWidth ,rectHeight);
